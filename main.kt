@@ -1,7 +1,13 @@
-fun main(args: Array<String>) {
-        println(petals(7,3))
-    }
-    fun petals(timmy:Int,sarah:Int):Boolean{
-        if ((timmy %2==0) .xor (sarah %2==0)) return true
-        return false
+
+    fun main(args: Array<String>) {
+        var num = 1234
+        var reversed = 0
+
+        while (num != 0) {
+            val digit = num % 10
+            reversed = reversed * 10 + digit
+            num /= 10
+        }
+
+        println("Reversed Number: $reversed")
     }
